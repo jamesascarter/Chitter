@@ -8,7 +8,7 @@ sign up to the service
 be able to to login
 log-out
 post a message to Chitter
-see all othe rpoeples peeps in chronological order
+see all other peoples peeps in chronological order
 
 Notes:
 
