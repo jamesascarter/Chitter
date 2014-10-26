@@ -1,2 +1,2 @@
-require './chitter'
+require './app/chitter'
 run Sinatra::Application
