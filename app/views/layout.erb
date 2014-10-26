@@ -1,6 +1,17 @@
+<html>
 <body>
   <% if current_user %>
     Welcome, <%= current_user.email %>
+
+      <form method="post" action="/sessions">
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="Sign out"
+      </form>
+
+  <% end %>
+  
+  <% if flash[:notice] %>
+    <div id="notice"><%= flash[:notice] %></div>  
   <% end %>
 
   <% if flash[:errors] && !flash[:errors].empty? %>
@@ -13,5 +24,7 @@
   	</ul>
   	  <% end %>
   	
-  <%= yield %>
+      <%= yield %>
 </body>
+
+</html>
