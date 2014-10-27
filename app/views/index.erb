@@ -3,7 +3,7 @@
 <h1>Welcome to Shitter</h1>
 
 <ul>
-  <% @peeps.each do |peep| %>
+  <% @peeps.reverse.each do |peep| %>
     <li> <%= peep.message %> <%= peep.name %><%= peep.username %> </li>
   <% end %>
 </ul>

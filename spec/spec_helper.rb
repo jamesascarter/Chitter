@@ -7,6 +7,7 @@ ENV["RACK_ENV"] = 'test' # because we need to know what database to work with
 require './app/chitter'
 require 'database_cleaner'
 require 'capybara/rspec'
+require 'orderly'
 
 Capybara.app = Sinatra::Application
 
