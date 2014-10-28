@@ -1,1 +1,0 @@
-bundle exec floating-beach-9422 ./config/floating-beach-9422.rb -p $PORT
