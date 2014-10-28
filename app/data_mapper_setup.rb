@@ -1,5 +1,14 @@
+if ENV["RACK_ENV"] == "production"
+DataMapper.setup(:default, ENV[DATABASE_ENV])
+
+else
+	
 env = ENV["RACK_ENV"] || "development"
 DataMapper.setup(:default, "postgres://localhost/chitter_#{env}")
+
+end
+
+
 
 DataMapper.finalize
 
