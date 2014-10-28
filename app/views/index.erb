@@ -4,7 +4,7 @@
 
 <ul>
   <% @peeps.reverse.each do |peep| %>
-    <li> <%= peep.message %> <%= peep.name %><%= peep.username %> </li>
+    <li> <%= peep.message %> <%= peep.user.name %><%= peep.user.username %> </li>
   <% end %>
 </ul>
 

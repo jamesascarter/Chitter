@@ -7,9 +7,11 @@ def sign_in(email, password)
 		click_button 'Sign in'
 end
 
-def sign_up(email = "james@gmail.com", password = "password", password_confirmation = "password")
+def sign_up(name = "james", username = "jamesascarter", email = "james@gmail.com", password = "password", password_confirmation = "password")
 		visit '/users/new'
 		expect(page.status_code).to eq(200)
+		fill_in :name, :with => name
+		fill_in :username, :with => username
 		fill_in :email, :with => email
 		fill_in :password, :with => password
 		fill_in :password_confirmation, :with => password_confirmation

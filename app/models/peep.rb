@@ -8,8 +8,8 @@ class Peep
   # This block describes what resources our model will have
   property :id,     	Serial # Serial means that it will be auto-incremented for every record
   property :message,  String, :length => 1..140
-  property :name,  		String
-  property :username, String, :length => 1..15
+
+  belongs_to :user
 
 
   # validates_length_of :message, :within => 1..160

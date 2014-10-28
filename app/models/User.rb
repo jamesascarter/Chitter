@@ -8,6 +8,10 @@ class User
 	property :id, Serial
 	property :email, String, :unique => true, :message => "This email is already registered"
 	property :password_digest, Text
+  property :username, Text, :unique => true
+  property :name, Text
+
+  has n, :peeps
 
 	attr_reader :password
 	attr_accessor :password_confirmation

@@ -6,7 +6,9 @@ get '/users/new' do
 post '/users' do
 	@user = User.create(:email => params[:email],
 		:password => params[:password],
-		:password_confirmation => params[:password_confirmation])
+		:password_confirmation => params[:password_confirmation],
+		:username => params[:username],
+		:name => params[:name])
 	if @user.save
 		session[:user_id] = @user.id
 		redirect to('/')

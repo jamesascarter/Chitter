@@ -3,12 +3,17 @@ require 'spec_helper'
 feature "User browses the list of all peeps" do
 
 	before(:each) {
+
+		@user = User.create(:name => 'james',
+					:username => 'jamesascarter',
+					:email => 'test@test.com',
+					:password => 'test',
+					:password_confirmation => 'test')
+
 		Peep.create(:message => "Hello this is peep one",
-								:name => "James Carter",
-								:username => "jamesascarter")
+								:user_id => @user.id)
 		Peep.create(:message => "Hello this is peep two",
-								:name => "James Carter",
-								:username => "jamesascarter")
+								:user_id => @user.id)
 	}
 
 	scenario "user can see the peeps" do
