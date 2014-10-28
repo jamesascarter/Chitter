@@ -26,4 +26,4 @@ This must be deployed with two seperate staging deployment targets: Staging and 
 
 Bonus:
 In order to start a conversation I want to reply to a peep from another person.
-Work on the CSS to make it look SMart!!
+Work on the CSS to make it look smart!!
