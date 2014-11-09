@@ -6,7 +6,7 @@ class Peep
   include DataMapper::Resource
 
   # This block describes what resources our model will have
-  property :id,     	Serial # Serial means that it will be auto-incremented for every record
+  property :id,       Serial # Serial means that it will be auto-incremented for every record
   property :message,  String, :length => 1..140
 
   belongs_to :user

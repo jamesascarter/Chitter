@@ -13,6 +13,7 @@ require_relative 'controllers/peeps'
 require_relative 'controllers/sessions'
 require_relative 'controllers/users'
 
+set :public_folder, Proc.new { File.join(root, '..', 'public')}
 enable :sessions
 set :session_secret, 'super secret'
 use Rack::Flash
