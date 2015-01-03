@@ -1,3 +1,5 @@
+### Twitter-Clone
+
 Challenge set by Makers to create a Twitter clone that will allow users to post messages to a public stream.
 
 Features:
@@ -25,5 +27,36 @@ Deployment to Heroku:
 This must be deployed with two seperate staging deployment targets: Staging and Production. This means having two Heroku apps that are being deployed to and three Github remotes(origin, staging and production).
 
 Bonus:
-In order to start a conversation I want to reply to a peep from another person.
 Work on the CSS to make it look smart!!
+
+
+### Tech
+
+* Ruby-On-Rails
+* Ruby
+* Cucumber/Capybara (testing)
+* Bcrypt
+* Datamapper
+* Postgres
+* Sinatra
+* Heroku
+* Dillinger - Markdown Editor
+
+### How to use
+
+
+To run the tests:
+```sh
+$ rspec
+
+```
+
+
+### Improvements
+
+* Allow users to start conversations based on tweets.
+* Do some HTML/CSS to make it look better
+
+
+
+
