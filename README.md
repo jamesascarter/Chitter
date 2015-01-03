@@ -51,6 +51,10 @@ $ rspec
 
 ```
 
+Can access the site in your browser at:
+
+https://chittabean.herokuapp.com/
+
 
 ### Improvements
 
