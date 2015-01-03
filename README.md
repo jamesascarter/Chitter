@@ -32,9 +32,9 @@ Work on the CSS to make it look smart!!
 
 ### Tech
 
-* Ruby-On-Rails
 * Ruby
 * Cucumber/Capybara (testing)
+* rspec
 * Bcrypt
 * Datamapper
 * Postgres
